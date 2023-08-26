@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ETASeminar | Assist academic research!</title>
+    <title>ETASeminar Minimalistic | Assist academic research!</title>
     <meta name="keywords" content="ETASeminar Webpage ★ Assist academic research!">
     <meta name="description" content="ETASeminar Webpage - ★ 助力学术科研！Assist academic research!">
     <meta name="author" content="ETASeminar, Website: etaseminar.eu.org, E-Mail: etaseminar@163.com">
@@ -51,7 +51,7 @@
             <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0" defer=""></script>
         </div>
         <ul class="nav navbar-menu">
-            <li class="nav-login ml-3"> <a href="https://vividzheng2017.github.io/etaseminar.eu.org" class="text-light" title="Homepage"><i
+            <li class="nav-login ml-3"> <a href="https://etaseminar.github.io" class="text-light" title="Homepage"><i
                         class="iconfont icon-home bookmark-ico icon-2x" style="font-size: 1.5em; position: relative; left: -10px; top: 0px;"></i></a> </li>
         </ul>
     </header>
@@ -65,9 +65,9 @@
                     <div class="s-type text-center overflow-x-auto">
                         <div class="s-type-list big">
                             <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
-                            <label for="type-google1" class="active" data-id="group-b"><span>Search</span></label>
-                            <label for="type-ciku" data-id="group-c"><span>Tools</span></label>
-                            <label for="type-zhihu"  data-id="group-d"><span>Forums</span></label>
+                            <label for="type-bing1" class="active" data-id="group-b"><span>Search</span></label>
+                            <label for="type-zhihu"  data-id="group-c"><span>Forums</span></label>
+                            <label for="type-github" data-id="group-d"><span>Tools</span></label>
                             <label for="type-bilibili" data-id="group-e"><span>Leisure</span></label>
                         </div>
                     </div>
@@ -83,51 +83,86 @@
                         <ul class="search-type">
                             <li><input hidden="" type="radio" name="type" id="type-google1" value="https://www.google.com/search?q=" data-placeholder="Google"><label for="type-google1"><span class="text-muted">Google</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-bing1" value="https://cn.bing.com/search?q=" data-placeholder="Bing"><label for="type-bing1"><span class="text-muted">Bing</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-bing1" 
+                                            value="https://cn.bing.com/search?q=" 
+                                            data-placeholder="Bing"><label for="type-bing1">
+                                            <span class="text-muted">Bing</span></label></li>
 
-                            <li><input checked="checked" hidden="" type="radio" name="type" id="type-baidu1" value="https://www.baidu.com/s?wd=" data-placeholder="Baidu"><label for="type-baidu1"><span class="text-muted">Baidu</span></label></li>
+                            <li><input checked="checked" hidden="" type="radio" name="type" id="type-baidu1" 
+                                            value="https://www.baidu.com/s?wd=" data-placeholder="Baidu"><label for="type-baidu1">
+                                            <span class="text-muted">Baidu</span></label></li>
+
+                            <li><input hidden="" type="radio" name="type" id="type-wechat" 
+                                            value="https://weixin.sogou.com/weixin?type=2&query=" data-placeholder="WeChat Posts"><label for="type-wechat">
+                                            <span class="text-muted">WeChat</span></label></li>
+
+                            <li><input hidden="" type="radio" name="type" id="type-baiduindex" 
+                                            value="https://index.baidu.com/v2/main/index.html#/trend/taylor?words=" data-placeholder="Baidu Hot Search Index"><label for="type-baiduindex">
+                                            <span class="text-muted">Baidu Index</span></label></li>
+
+
+
+
 
 
                         </ul>
                     </div>
                     <div class="search-group group-c ">
                         <ul class="search-type">
-                            <li><input hidden="" type="radio" name="type" id="type-ping" value="https://ping.chinaz.com/" data-placeholder="请输入网址(不带https://)"><label for="type-ping"><span class="text-muted">PING检测</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-zhihu" value="https://www.zhihu.com/search?type=content&q=" data-placeholder="Zhihu"><label for="type-zhihu"><span class="text-muted">Zhihu</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-404" value="https://tool.chinaz.com/Links/?DAddress=" data-placeholder="请输入网址(不带https://)"><label for="type-404"><span class="text-muted">死链检测</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-douban" value="https://www.douban.com/search?q=" data-placeholder="Douban"><label for="type-douban"><span class="text-muted">Douban</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-ciku" value="https://www.ciku5.com/s?wd=" data-placeholder="请输入关键词"><label for="type-ciku"><span class="text-muted">关键词挖掘</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-weibo" value="https://s.weibo.com/weibo/" data-placeholder="Weibo"><label for="type-weibo"><span class="text-muted">Weibo</span></label></li>
+
 
 
                         </ul>
                     </div>
                     <div class="search-group group-d ">
                         <ul class="search-type">
-                            <li><input hidden="" type="radio" name="type" id="type-zhihu" value="https://www.zhihu.com/search?type=content&q=" data-placeholder="知乎"><label for="type-zhihu"><span class="text-muted">知乎</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-github" 
+                                            value="https://github.com/search?q=" 
+                                            data-placeholder="Github"><label for="type-github">
+                                            <span class="text-muted">Github</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-wechat" value="https://weixin.sogou.com/weixin?type=2&query=" data-placeholder="微信"><label for="type-wechat"><span class="text-muted">微信</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-gitee" 
+                                            value="https://search.gitee.com/?skin=rec&type=repository&q=" 
+                                            data-placeholder="Gitee"><label for="type-gitee">
+                                            <span class="text-muted">Gitee</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-weibo" value="https://s.weibo.com/weibo/" data-placeholder="微博"><label for="type-weibo"><span class="text-muted">微博</span></label></li>
-
-                            <li><input hidden="" type="radio" name="type" id="type-douban" value="https://www.douban.com/search?q=" data-placeholder="豆瓣"><label for="type-douban"><span class="text-muted">豆瓣</span></label></li>
-
-                            <li><input hidden="" type="radio" name="type" id="type-why" value="https://ask.seowhy.com/search/?q=" data-placeholder="SEO问答社区"><label for="type-why"><span class="text-muted">搜外问答</span></label></li>
 
 
                         </ul>
                     </div>
                     <div class="search-group group-e ">
                         <ul class="search-type">
+                            <li><input hidden="" type="radio" name="type" id="type-youtube" 
+                                            value="https://www.youtube.com/results?search_query=" 
+                                            data-placeholder="Youtube"><label for="type-youtube">
+                                            <span class="text-muted">Youtube</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-bilibili" value="https://search.bilibili.com/all?keyword=" data-placeholder="Bilibili Search"><label for="type-bilibili"><span class="text-muted">Bilibili</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-acfun"
+                                            value="https://www.acfun.cn/search?keyword="
+                                            data-placeholder="AcFun"><label for="type-acfun">
+                                            <span class="text-muted">AcFun</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-juhe" value="https://www.cupfox.com/search?key=" data-placeholder="影视资源聚合搜索"><label for="type-juhe"><span class="text-muted">聚合搜索</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-bilibili"
+                                            value="https://search.bilibili.com/all?keyword=" 
+                                            data-placeholder="Bilibili"><label for="type-bilibili">
+                                            <span class="text-muted">Bilibili</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-555" value="https://www.o8tv.com/vodsearch/-------------.html?wd=" data-placeholder="在线影视搜索"><label for="type-555"><span class="text-muted">555电影</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-wangfei"
+                                            value="https://www.wangfei.io/vodsearch.html?wd=" 
+                                            data-placeholder="WangFei.TV"><label for="type-wangfei">
+                                            <span class="text-muted">WangFei</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-dyxs" value="http://dyxs15.com/search--------------/?wd=" data-placeholder="在线影视搜索"><label for="type-dyxs"><span class="text-muted">电影先生</span></label></li>
+                            <li><input hidden="" type="radio" name="type" id="type-555"
+                                            value="https://555dy5s.com/vodsearch/-------------.html?wd=" 
+                                            data-placeholder="--> www.555dyy.top"><label for="type-555">
+                                            <span class="text-muted">555</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-dibi" value="https://www.mp4er.cc/search/" data-placeholder="在线及下载影视搜索"><label for="type-dibi"><span class="text-muted">哔嘀影视</span></label></li>
+
 
 
                         </ul>
@@ -142,60 +177,194 @@
 
     <section class="quick-sites position-relative">
         <div class="container text-center px-5">
-            <div class="row">
+           <div class="row">
 
-                     <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://www.scopus.com/standard/marketing.uri#basic" title="Scopus Preview" rel="noopener">
+                    <div class="d-flex mb-2">
+                         <div class="sites-icon mx-auto ub-blur-bg"> 
+                         <img class="lazy" src="../ico/scopus.png"
+                              data-src="../ico/scopus.png" 
+                              onerror="javascript:this.src='../ico/scopus.png'"
+                              alt="Scopus Preview"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Scopus</span>
+                    </div>
+                </a>
+
+
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://orcid.org/" title="ORCID" rel="noopener">
+                    <div class="d-flex mb-2">
+                         <div class="sites-icon mx-auto ub-blur-bg"> 
+                         <img class="lazy" src="../ico/orcid.png"
+                              data-src="../ico/orcid.png" 
+                              onerror="javascript:this.src='../ico/orcid.png'"
+                              alt="ORCID"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>ORCID</span>
+                    </div>
+                </a>
+
+
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
                     href="https://scholar.google.com/schhp?hl=zh-CN" title="Google Scholar" rel="noopener">
                     <div class="d-flex mb-2">
-                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="../ico/googlescholar.png"
-                                data-src="../ico/googlescholar.png" onerror="javascript:this.src='../ico/googlescholar.png'"
-                                alt="Google Scholar"> </div>
+                         <div class="sites-icon mx-auto ub-blur-bg"> 
+                         <img class="lazy" src="../ico/googlescholar.png"
+                              data-src="../ico/googlescholar.png" 
+                              onerror="javascript:this.src='../ico/googlescholar.png'"
+                              alt="Google Scholar"> </div>
                     </div>
-                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Google Scholar</span>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Scholar</span>
                     </div>
+                </a>
 
-                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+
+
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://www.webofscience.com/wos/alldb/basic-search" title="Web of Science" rel="noopener">
+                    <div class="d-flex mb-2">
+                         <div class="sites-icon mx-auto ub-blur-bg"> 
+                         <img class="lazy" src="../ico/wos.png"
+                              data-src="../ico/wos.png" 
+                              onerror="javascript:this.src='../ico/wos.png'"
+                              alt="Web of Science"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>WoS</span>
+                    </div>
+                </a>
+
+
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://www.sciencedirect.com/" title="Elsevier ScienceDirect" rel="noopener">
+                    <div class="d-flex mb-2">
+                         <div class="sites-icon mx-auto ub-blur-bg"> 
+                         <img class="lazy" src="../ico/sciencedirect.png"
+                              data-src="../ico/sciencedirect.png" 
+                              onerror="javascript:this.src='../ico/sciencedirect.png'"
+                              alt="Elsevier ScienceDirect"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Science</span>
+                    </div>
+                </a>
+
+
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://www.nber.org/papers?page=1&perPage=50&sortBy=public_date" title="National Bureau of Economic Research" rel="noopener">
+                    <div class="d-flex mb-2">
+                         <div class="sites-icon mx-auto ub-blur-bg"> 
+                         <img class="lazy" src="../ico/nber.png"
+                              data-src="../ico/nber.png" 
+                              onerror="javascript:this.src='../ico/nber.png'"
+                              alt="NBER"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>NBER</span>
+                    </div>
+                </a>
+
+
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://www.researchgate.net/" title="ResearchGate" rel="noopener">
+                    <div class="d-flex mb-2">
+                         <div class="sites-icon mx-auto ub-blur-bg"> 
+                         <img class="lazy" src="../ico/researchgate.png"
+                              data-src="../ico/researchgate.png" 
+                              onerror="javascript:this.src='../ico/researchgate.png'"
+                              alt="ResearchGate"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Research</span>
+                    </div>
+                </a>
+
+
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://tool.yovisun.com/scihub/" title="SCI-HUB" rel="noopener">
+                    <div class="d-flex mb-2">
+                         <div class="sites-icon mx-auto ub-blur-bg"> 
+                         <img class="lazy" src="../ico/scihub.png"
+                              data-src="../ico/scihub.png" 
+                              onerror="javascript:this.src='../ico/scihub.png'"
+                              alt="SCI-HUB"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>SCI-HUB</span>
+                    </div>
+                </a>
+
+
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://c.aalib.net/tool/libgen/" title="Library Genesis" rel="noopener">
+                    <div class="d-flex mb-2">
+                         <div class="sites-icon mx-auto ub-blur-bg"> 
+                         <img class="lazy" src="../ico/libgen.png"
+                              data-src="../ico/libgen.png" 
+                              onerror="javascript:this.src='../ico/libgen.png'"
+                              alt="Library Genesis"> </div>
+                    </div>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Libgen</span>
+                    </div>
+                </a>
+
+
+
+
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
                     href="https://kns.cnki.net/kns/advsearch?dbcode=CJZK" title="CNKI (Advanced Search)" rel="noopener">
                     <div class="d-flex mb-2">
-                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="../ico/cnki.png"
-                                data-src="../ico/cnki.png" onerror="javascript:this.src='../ico/cnki.png'"
-                                alt="CNKI"> </div>
+                        <div class="sites-icon mx-auto ub-blur-bg"> 
+                        <img class="lazy" src="../ico/cnki.png"
+                                  data-src="../ico/cnki.png" 
+                                  onerror="javascript:this.src='../ico/cnki.png'"
+                                  alt="CNKI"> </div>
                     </div>
                     <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>CNKI</span>
                     </div>
+                </a>
 
-                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
-                    href="https://index.baidu.com/v2/index.html#/" title="Baidu Hot Search Index" rel="noopener">
+
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://s.wanfangdata.com.cn/advanced-search/paper" title="WanFang (Advanced Search)" rel="noopener">
                     <div class="d-flex mb-2">
-                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="../ico/baiduindex.png"
-                                data-src="../ico/baiduindex.png" onerror="javascript:this.src='../ico/baiduindex.png'"
-                                alt="Baidu Index"> </div>
+                        <div class="sites-icon mx-auto ub-blur-bg"> 
+                        <img class="lazy" src="../ico/wanfangdata.png"
+                                  data-src="../ico/wanfangdata.png" 
+                                  onerror="javascript:this.src='../ico/wanfangdata.png'"
+                                  alt="WanFang (Advanced Search)"> </div>
                     </div>
-                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Baidu Index/span>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>WanFang</span>
                     </div>
+                </a>
 
 
-                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
-                    href="https://github.com/" title="Github" rel="noopener">
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="http://qikan.cqvip.com/Qikan/Search/Advance?from=index" title="CQVIP (Advanced Search)" rel="noopener">
                     <div class="d-flex mb-2">
-                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="../ico/github.png"
-                                data-src="../ico/github.png" onerror="javascript:this.src='../ico/github.png'"
-                                alt="Github"> </div>
+                        <div class="sites-icon mx-auto ub-blur-bg"> 
+                        <img class="lazy" src="../ico/cqvip.png"
+                                  data-src="../ico/cqvip.png" 
+                                  onerror="javascript:this.src='../ico/cqvip.png'"
+                                  alt="CQVIP (Advanced Search)"> </div>
                     </div>
-                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Github</span>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>CQVIP</span>
                     </div>
+                </a>
 
-                </a> <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
-                    href="https://gitee.com/" title="Gitee" rel="external nofollow noopener">
+
+                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
+                    href="https://www.ncpssd.org/" title="国家哲学社会科学文献中心" rel="noopener">
                     <div class="d-flex mb-2">
-                        <div class="sites-icon mx-auto ub-blur-bg"> <img class="lazy" src="../ico/gitee.png"
-                                data-src="../ico/gitee.png" onerror="javascript:this.src='../ico/gitee.png'" alt="Gitee">
-                        </div>
+                        <div class="sites-icon mx-auto ub-blur-bg"> 
+                        <img class="lazy" src="../ico/ncpssd.png"
+                                  data-src="../ico/ncpssd.png" 
+                                  onerror="javascript:this.src='../ico/ncpssd.png'"
+                                  alt="NCPSSD"> </div>
                     </div>
-                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Gitee</span>
+                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>CASS</span>
                     </div>
+                </a>
 
-                </a> </div>
+
+             </div>
         </div>
     </section>
 
@@ -209,9 +378,11 @@
                 class="btn rounded-circle go-up m-1" rel="go-top" style="display: none;" one-link-mark="yes"> <i
                     class="iconfont icon-to-up"></i> </a> </div>
         </div>
+
         <div class="footer-inner text-center text-light my-3" style="color: #f8f9fa45!important;">
                 <div class="footer-text">
-                    Copyright © 2023 ETASeminar Design by Weiwei ZHENG
+                    Copyright 2023 ETASeminar @ <a href="https://weiweizheng.eu.org/"
+                        target="_blank"><strong>Weiwei ZHENG</strong>
                 </div>
             </div>
     </footer>
