@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>ETASeminar Minimalistic | Assist academic research!</title>
     <meta name="keywords" content="ETASeminar Webpage ★ Assist academic research!">
-    <meta name="description" content="ETASeminar Webpage - ★ 助力学术科研！Assist academic research!">
+    <meta name="description" content="ETASeminar Webpage ★ Assist academic research!">
     <meta name="author" content="ETASeminar, Website: etaseminar.eu.org, E-Mail: etaseminar@163.com">
     <meta name="baidu-site-verification" content="code-vIivd4QsAU">
     <link rel="shortcut icon" href="../ico.ico">
@@ -68,11 +68,12 @@
                 <div id="search-list-menu" class="hide-type-list">
                     <div class="s-type text-center overflow-x-auto">
                         <div class="s-type-list big">
-                            <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
-                            <label for="type-bing1" class="active" data-id="group-b"><span>Search</span></label>
-                            <label for="type-zhihu"  data-id="group-c"><span>Forums</span></label>
-                            <label for="type-github" data-id="group-d"><span>Tools</span></label>
-                            <label for="type-bilibili" data-id="group-e"><span>Leisure</span></label>
+                                    <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
+                                    <label for="type-oulu" class="" data-id="group-a"><span>Papers</span></label>
+                                    <label for="type-bing1" data-id="group-b"><span>Search</span></label>
+                                    <label for="type-googletranslator1" data-id="group-c"><span>Translator</span></label>
+                                    <label for="type-zhihu1" data-id="group-d"><span>Dynamic</span></label>
+                                    <label for="type-bilibili" data-id="group-e"><span>Leisure</span></label>
                         </div>
                     </div>
                 </div>
@@ -81,88 +82,141 @@
                     <button type="submit"><i class="iconfont icon-search"></i></button>
                 </form>
                 <div id="search-list" class="hide-type-list">
-
-
-                    <div class="search-group group-b s-current">
-                        <ul class="search-type">
-                            <li><input hidden="" type="radio" name="type" id="type-google1" 
-                                            value="https://www.google.com/search?q=" 
-                                            data-placeholder="Google"><label for="type-google1">
-                                            <span class="text-muted">Google</span></label></li>
-
-                            <li><input hidden="" type="radio" name="type" id="type-googlescholar1" 
-                                            value="https://scholar.google.com/scholar?q=" 
-                                            data-placeholder="Google Scholar"><label for="type-googlescholar1">
-                                            <span class="text-muted">Scholar</span></label></li>
-
-
-                            <li><input hidden="" type="radio" name="type" id="type-connectedpapers" 
+                            <div class="search-group group-a s-current">
+                                <ul class="search-type">
+                                    <li><input hidden="" type="radio" name="type" id="type-connectedpapers"
                                             value="https://www.connectedpapers.com/search?q=" 
-                                            data-placeholder="Connected Papers"><label for="type-connectedpapers">
-                                            <span class="text-muted">Papers</span></label></li>
+                                            data-placeholder="Connected Papers: Texting Title Here"><label
+                                            for="type-connectedpapers"><span class="text-muted">Connected</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-bing1" 
-                                            value="https://cn.bing.com/search?q=" 
-                                            data-placeholder="Bing"><label for="type-bing1">
-                                            <span class="text-muted">Bing</span></label></li>
+                                    <li><input hidden="" type="radio" name="type" id="type-googlescholar1"
+                                            value="https://scholar.google.com/scholar?as_occt=title&as_oq=" 
+                                            data-placeholder="Google Scholar: Texting Title Here"><label
+                                            for="type-googlescholar1"><span class="text-muted">Scholar-TI</span></label></li>
 
-                            <li><input checked="checked" hidden="" type="radio" name="type" id="type-baidu1" 
-                                            value="https://www.baidu.com/s?wd=" 
-                                            data-placeholder="Baidu"><label for="type-baidu1">
-                                            <span class="text-muted">Baidu</span></label></li>
+                                    <li><input hidden="" type="radio" name="type" id="type-googlescholar2"
+                                            value="https://scholar.google.com/scholar?as_epq=" 
+                                            data-placeholder="Google Scholar: Texting Core-Words Here"><label
+                                            for="type-googlescholar2"><span class="text-muted">CW</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-wechat" 
+                                    <li><input hidden="" type="radio" name="type" id="type-googlescholar3"
+                                            value="https://scholar.google.com/scholar?as_sauthors=" 
+                                            data-placeholder="Google Scholar: Texting Author Here"><label
+                                            for="type-googlescholar3"><span class="text-muted">AU</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-cnkisearch1"
+                                            value="https://kns.cnki.net/kns8/DefaultResult/Index?korder=TI&kw=" 
+                                            data-placeholder="CNKI: Texting Title Here"><label
+                                            for="type-cnkisearch1"><span class="text-muted">CNKI-TI</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-cnkisearch2"
+                                            value="https://kns.cnki.net/kns8/DefaultResult/Index?korder=SU&kw=" 
+                                            data-placeholder="CNKI: Texting Core-Words Here"><label
+                                            for="type-cnkisearch2"><span class="text-muted">CW</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-cnkisearch3"
+                                            value="https://kns.cnki.net/kns8/DefaultResult/Index?korder=AU&kw=" 
+                                            data-placeholder="CNKI: Texting Author Here"><label
+                                            for="type-cnkisearch3"><span class="text-muted">AU</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-wechat1"
                                             value="https://weixin.sogou.com/weixin?type=2&query=" 
-                                            data-placeholder="WeChat Posts"><label for="type-wechat">
-                                            <span class="text-muted">WeChat</span></label></li>
-                        </ul>
-                    </div>
+                                            data-placeholder="WeChat Posts: Find Articles Posted by WeChat Official Account"><label
+                                            for="type-wechat1"><span class="text-muted">WeChat</span></label></li>
+                                </ul>
+                            </div>
 
 
-                    <div class="search-group group-c ">
-                        <ul class="search-type">
-                            <li><input hidden="" type="radio" name="type" id="type-zhihu" value="https://www.zhihu.com/search?type=content&q=" data-placeholder="Zhihu"><label for="type-zhihu"><span class="text-muted">Zhihu</span></label></li>
+                            <div class="search-group group-b ">
+                                <ul class="search-type">
+                                    <li><input hidden="" type="radio" name="type" id="type-google1"
+                                            value="https://www.google.com/search?q=" data-placeholder="Google"><label
+                                            for="type-google1"><span class="text-muted">Google</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-douban" value="https://www.douban.com/search?q=" data-placeholder="Douban"><label for="type-douban"><span class="text-muted">Douban</span></label></li>
+                                    <li><input hidden="" type="radio" name="type" id="type-bing1"
+                                            value="https://www.bing.com/search?q=" data-placeholder="Bing"><label
+                                            for="type-bing1"><span class="text-muted">Bing</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-weibo" value="https://s.weibo.com/weibo/" data-placeholder="Weibo"><label for="type-weibo"><span class="text-muted">Weibo</span></label></li>
-                        </ul>
-                    </div>
+                                    <li><input hidden="" type="radio" name="type" id="type-bingimage"
+                                            value="https://www.bing.com/images/search?q=" data-placeholder="Bing Image"><label
+                                            for="type-bingimage"><span class="text-muted">Image</span></label></li>
 
+                                    <li><input hidden="" type="radio" name="type" id="type-baidu1"
+                                            value="https://www.baidu.com/s?wd=" data-placeholder="Baidu"><label
+                                            for="type-baidu1"><span class="text-muted">Baidu</span></label></li>
 
-                    <div class="search-group group-d ">
-                        <ul class="search-type">
-                            <li><input hidden="" type="radio" name="type" id="type-github" 
-                                            value="https://github.com/search?q=" 
-                                            data-placeholder="Github"><label for="type-github">
-                                            <span class="text-muted">Github</span></label></li>
-
-                            <li><input hidden="" type="radio" name="type" id="type-gitee" 
-                                            value="https://search.gitee.com/?skin=rec&type=repository&q=" 
-                                            data-placeholder="Gitee"><label for="type-gitee">
-                                            <span class="text-muted">Gitee</span></label></li>
-                        </ul>
-                    </div>
+                                    <li><input hidden="" type="radio" name="type" id="type-baiduimage"
+                                            value="https://image.baidu.com/search/index?tn=baiduimage&word=" data-placeholder="Baidu Image"><label
+                                            for="type-baiduimage"><span class="text-muted">Image</span></label></li>
+                                </ul>
+                            </div>
 
 
-                    <div class="search-group group-e ">
-                        <ul class="search-type">
-                            <li><input hidden="" type="radio" name="type" id="type-youtube" 
-                                            value="https://www.youtube.com/results?search_query=" 
+                            <div class="search-group group-c ">
+                                <ul class="search-type">
+                                    <li><input hidden="" type="radio" name="type" id="type-eudic" 
+                                            value="https://dict.eudic.net/dicts/en/" 
+                                            data-placeholder="Eudic Dictionary"><label for="type-eudic">
+                                            <span class="text-muted">Eudic</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-googletranslator1" 
+                                            value="https://translate.google.com.hk/?sourceid=cnhp&sl=auto&tl=en&text=" 
+                                            data-placeholder="CHN -> ENG | Google Translator"><label for="type-googletranslator1">
+                                            <span class="text-muted">CE-Google</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-deepl1" 
+                                            value="https://www.deepl.com/translator#zh/en/" 
+                                            data-placeholder="CHN -> ENG | DeepL Translator"><label for="type-deepl1">
+                                            <span class="text-muted">DeepL</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-googletranslator2" 
+                                            value="https://translate.google.com.hk/?sourceid=cnhp&sl=auto&tl=zh-CN&text=" 
+                                            data-placeholder="ENG -> CHN | Google Translator"><label for="type-googletranslator2">
+                                            <span class="text-muted">EC-Google</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-deepl2" 
+                                            value="https://www.deepl.com/translator#en/zh/" 
+                                            data-placeholder="ENG -> CHN | DeepL Translator"><label for="type-deepl2">
+                                            <span class="text-muted">DeepL</span></label></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="search-group group-d ">
+                                <ul class="search-type">
+                                    <li><input hidden="" type="radio" name="type" id="type-douban"
+                                            value="https://www.douban.com/search?q=" data-placeholder="Douban"><label
+                                            for="type-douban"><span class="text-muted">Douban</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-zhihu1"
+                                            value="https://www.zhihu.com/search?type=content&q=" data-placeholder="Zhihu"><label 
+                                            for="type-zhihu1"><span class="text-muted">Zhihu</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-weibo"
+                                            value="https://s.weibo.com/weibo/" data-placeholder="Weibo"><label
+                                            for="type-weibo"><span class="text-muted">Weibo</span></label></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="search-group group-e ">
+                                <ul class="search-type">
+                                    <li><input hidden="" type="radio" name="type" id="type-youtube"
+                                            value="https://www.youtube.com/results?search_query="
                                             data-placeholder="Youtube"><label for="type-youtube">
                                             <span class="text-muted">Youtube</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-acfun"
+                                    <li><input hidden="" type="radio" name="type" id="type-acfun"
                                             value="https://www.acfun.cn/search?keyword="
                                             data-placeholder="AcFun"><label for="type-acfun">
                                             <span class="text-muted">AcFun</span></label></li>
 
-                            <li><input hidden="" type="radio" name="type" id="type-bilibili"
+                                    <li><input hidden="" type="radio" name="type" id="type-bilibili"
                                             value="https://search.bilibili.com/all?keyword=" 
                                             data-placeholder="Bilibili"><label for="type-bilibili">
                                             <span class="text-muted">Bilibili</span></label></li>
-                        </ul>
-                    </div>
+                                </ul>
+                            </div>
 
                 </div>
 
@@ -191,34 +245,6 @@
                               alt="Scopus Preview"> </div>
                     </div>
                     <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Scopus</span>
-                    </div>
-                </a>
-
-
-                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
-                    href="https://orcid.org/" title="ORCID | Search for Author's Information" rel="noopener">
-                    <div class="d-flex mb-2">
-                         <div class="sites-icon mx-auto ub-blur-bg"> 
-                         <img class="lazy" src="../ico/orcid.png"
-                              data-src="../ico/orcid.png" 
-                              onerror="javascript:this.src='../ico/orcid.png'"
-                              alt="ORCID"> </div>
-                    </div>
-                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>ORCID</span>
-                    </div>
-                </a>
-
-
-                <a class="sites-btn col-3 col-md-2 text-center mb-4" target="_blank"
-                    href="https://scholar.google.com/schhp?hl=zh-CN" title="Google Scholar" rel="noopener">
-                    <div class="d-flex mb-2">
-                         <div class="sites-icon mx-auto ub-blur-bg"> 
-                         <img class="lazy" src="../ico/googlescholar.png"
-                              data-src="../ico/googlescholar.png" 
-                              onerror="javascript:this.src='../ico/googlescholar.png'"
-                              alt="Google Scholar"> </div>
-                    </div>
-                    <div class="sites-title ub-blur-bg px-2 text-xs overflowClip_1"><span>Google Scholar</span>
                     </div>
                 </a>
 
@@ -378,15 +404,13 @@
                     </div>
                 </a>
 
-
              </div>
         </div>
+
+
+
+
     </section>
-
-
-
-
-
     <footer class="main-footer footer-type-1 position-relative text-xs">
         <div id="footer-tools" class="d-flex flex-column">
             <div id="footer-tools" class="d-flex flex-column"> <a href="javascript:" id="go-to-up"

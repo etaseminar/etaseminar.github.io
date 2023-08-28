@@ -242,17 +242,23 @@
                                             <a href="#">
                                                 <i class="fa fa-info-circleicon-arrow-r-m fa-lg mr-2"></i>
                                                 <span>About</span></a>
+
                                             <ul class="sub-menu">
-
-                                        <li id="menu-item-264"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264">
-                                            <a href="https://weibo.com/u/5773688963" target="_blank">Weibo</a>
+                                                <li id="menu-item-285"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-285">
+                                                    <a href="https://etaseminar.eu.org/">ETASeminar</a>
                                                 </li>
 
-                                        <li id="menu-item-285"
-                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-285">
-                                             <a href="#">ETASeminar</a>
+                                                <li id="menu-item-264"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264">
+                                                    <a href="https://weiweizheng.eu.org" target="_blank">Sponsor</a>
                                                 </li>
+
+                                                <li id="menu-item-285"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-285">
+                                                    <a href="https://etaseminar.github.io/wp-content/uploads/avatars/reward.png">Reward</a>
+                                                </li>
+
                                             </ul>
                                         </li>
                                     </ul>
@@ -543,9 +549,9 @@
                             <div class="s-type text-center">
                                 <div class="s-type-list big">
                                     <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
-                                    <label for="type-googlescholar" class="" data-id="group-a"><span>Recommend</span></label>
+                                    <label for="type-googlescholar1" class="" data-id="group-a"><span>Papers</span></label>
                                     <label for="type-bing1" data-id="group-b"><span>Search</span></label>
-                                    <label for="type-googletranslator1" data-id="group-c"><span>Translator</span></label>
+                                    <label for="type-eudic" data-id="group-c"><span>Translator</span></label>
                                     <label for="type-zhihu1" data-id="group-d"><span>Dynamic</span></label>
                                     <label for="type-bilibili" data-id="group-e"><span>Leisure</span></label>
                                 </div>
@@ -559,21 +565,47 @@
                         </form>
                         <div id="search-list" class="hide-type-list">
 
-
                             <div class="search-group group-a ">
                                 <ul class="search-type">
-                                    <li><input hidden="" type="radio" name="type" id="type-googlescholar"
-                                            value="https://scholar.google.com/scholar?q=" data-placeholder="Google Scholar"><label
-                                            for="type-googlescholar"><span class="text-muted">Scholar</span></label></li>
+                                    <li><input hidden="" type="radio" name="type" id="type-connectedpapers"
+                                            value="https://www.connectedpapers.com/search?q=" 
+                                            data-placeholder="Connected Papers: Texting Title Here"><label
+                                            for="type-connectedpapers"><span class="text-muted">Connected</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-googlescholar1"
+                                            value="https://scholar.google.com/scholar?as_occt=title&as_oq=" 
+                                            data-placeholder="Google Scholar: Texting Title Here"><label
+                                            for="type-googlescholar1"><span class="text-muted">Scholar-TI</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-googlescholar2"
+                                            value="https://scholar.google.com/scholar?as_epq=" 
+                                            data-placeholder="Google Scholar: Texting Core-Words Here"><label
+                                            for="type-googlescholar2"><span class="text-muted">CW</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-googlescholar3"
+                                            value="https://scholar.google.com/scholar?as_sauthors=" 
+                                            data-placeholder="Google Scholar: Texting Author Here"><label
+                                            for="type-googlescholar3"><span class="text-muted">AU</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-cnkisearch1"
+                                            value="https://kns.cnki.net/kns8/DefaultResult/Index?korder=TI&kw=" 
+                                            data-placeholder="CNKI: Texting Title Here"><label
+                                            for="type-cnkisearch1"><span class="text-muted">CNKI-TI</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-cnkisearch2"
+                                            value="https://kns.cnki.net/kns8/DefaultResult/Index?korder=SU&kw=" 
+                                            data-placeholder="CNKI: Texting Core-Words Here"><label
+                                            for="type-cnkisearch2"><span class="text-muted">CW</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-cnkisearch3"
+                                            value="https://kns.cnki.net/kns8/DefaultResult/Index?korder=AU&kw=" 
+                                            data-placeholder="CNKI: Texting Author Here"><label
+                                            for="type-cnkisearch3"><span class="text-muted">AU</span></label></li>
 
                                     <li><input hidden="" type="radio" name="type" id="type-wechat1"
                                             value="https://weixin.sogou.com/weixin?type=2&query=" 
-                                            data-placeholder="WeChat Posts"><label
+                                            data-placeholder="WeChat Posts: Find Articles Posted by WeChat Official Account"><label
                                             for="type-wechat1"><span class="text-muted">WeChat</span></label></li>
-
-                                    <li><input hidden="" type="radio" name="type" id="type-bingimage"
-                                            value="https://www.bing.com/images/search?q=" data-placeholder="Bing Image"><label
-                                            for="type-bingimage"><span class="text-muted">Image</span></label></li>
                                 </ul>
                             </div>
 
@@ -587,15 +619,28 @@
                                             value="https://www.bing.com/search?q=" data-placeholder="Bing"><label
                                             for="type-bing1"><span class="text-muted">Bing</span></label></li>
 
+                                    <li><input hidden="" type="radio" name="type" id="type-bingimage"
+                                            value="https://www.bing.com/images/search?q=" data-placeholder="Bing Image"><label
+                                            for="type-bingimage"><span class="text-muted">Image</span></label></li>
+
                                     <li><input hidden="" type="radio" name="type" id="type-baidu1"
                                             value="https://www.baidu.com/s?wd=" data-placeholder="Baidu"><label
                                             for="type-baidu1"><span class="text-muted">Baidu</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-baiduimage"
+                                            value="https://image.baidu.com/search/index?tn=baiduimage&word=" data-placeholder="Baidu Image"><label
+                                            for="type-baiduimage"><span class="text-muted">Image</span></label></li>
                                 </ul>
                             </div>
 
 
                             <div class="search-group group-c ">
                                 <ul class="search-type">
+                                    <li><input hidden="" type="radio" name="type" id="type-eudic" 
+                                            value="https://dict.eudic.net/dicts/en/" 
+                                            data-placeholder="Eudic Dictionary"><label for="type-eudic">
+                                            <span class="text-muted">Eudic</span></label></li>
+
                                     <li><input hidden="" type="radio" name="type" id="type-googletranslator1" 
                                             value="https://translate.google.com.hk/?sourceid=cnhp&sl=auto&tl=en&text=" 
                                             data-placeholder="CHN -> ENG | Google Translator"><label for="type-googletranslator1">
@@ -604,7 +649,7 @@
                                     <li><input hidden="" type="radio" name="type" id="type-deepl1" 
                                             value="https://www.deepl.com/translator#zh/en/" 
                                             data-placeholder="CHN -> ENG | DeepL Translator"><label for="type-deepl1">
-                                            <span class="text-muted">CE-DeepL</span></label></li>
+                                            <span class="text-muted">DeepL</span></label></li>
 
                                     <li><input hidden="" type="radio" name="type" id="type-googletranslator2" 
                                             value="https://translate.google.com.hk/?sourceid=cnhp&sl=auto&tl=zh-CN&text=" 
@@ -614,20 +659,20 @@
                                     <li><input hidden="" type="radio" name="type" id="type-deepl2" 
                                             value="https://www.deepl.com/translator#en/zh/" 
                                             data-placeholder="ENG -> CHN | DeepL Translator"><label for="type-deepl2">
-                                            <span class="text-muted">EC-DeepL</span></label></li>
+                                            <span class="text-muted">DeepL</span></label></li>
                                 </ul>
                             </div>
 
 
                             <div class="search-group group-d ">
                                 <ul class="search-type">
-                                    <li><input hidden="" type="radio" name="type" id="type-zhihu1"
-                                            value="https://www.zhihu.com/search?type=content&q=" data-placeholder="Zhihu"><label 
-                                            for="type-zhihu1"><span class="text-muted">Zhihu</span></label></li>
-
                                     <li><input hidden="" type="radio" name="type" id="type-douban"
                                             value="https://www.douban.com/search?q=" data-placeholder="Douban"><label
                                             for="type-douban"><span class="text-muted">Douban</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="type-zhihu1"
+                                            value="https://www.zhihu.com/search?type=content&q=" data-placeholder="Zhihu"><label 
+                                            for="type-zhihu1"><span class="text-muted">Zhihu</span></label></li>
 
                                     <li><input hidden="" type="radio" name="type" id="type-weibo"
                                             value="https://s.weibo.com/weibo/" data-placeholder="Weibo"><label
@@ -656,6 +701,10 @@
                             </div>
 
                         </div>
+
+
+
+
                         <div class="card search-smart-tips" style="display: none">
                             <ul></ul>
                         </div>
@@ -710,7 +759,7 @@
                         Recommend
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -826,33 +875,6 @@
 
                     <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
                         <div class="url-body default">
-                            <a href="https://kns.cnki.net/kns/advsearch?dbcode=CJZK" target="_blank" data-id="3322"
-                                data-url="https://kns.cnki.net/kns/advsearch?dbcode=CJZK" class="card no-c  mb-4 site-3322"
-                                data-toggle="tooltip" data-placement="bottom" title="China National Knowledge Infrastructure (Advanced Search)">
-                                <div class="card-body">
-                                    <div class="url-content d-flex align-items-center">
-                                        <div
-                                            class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
-                                            <img class="lazy" src="ico/cnki.png" data-src="ico/cnki.png"
-                                                onerror="javascript:this.src='ico/cnki.png'" alt="CNKI">
-                                        </div>
-                                        <div class="url-info flex-fill">
-                                            <div class="text-sm overflowClip_1">
-                                                <strong>CNKI</strong>
-                                            </div>
-                                            <p class="overflowClip_1 m-0 text-muted text-xs">中国知网</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="https://kns.cnki.net/kns/advsearch?dbcode=CJZK" class="togo text-center text-muted is-views"
-                                data-id="3322" data-toggle="tooltip" data-placement="right" title="Go to" rel="nofollow"><i
-                                    class="iconfont icon-goto"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
-                        <div class="url-body default">
                             <a href="http://www.eshukan.com/SuperSearch.aspx" target="_blank" data-id="3322"
                                 data-url="http://www.eshukan.com/SuperSearch.aspx" class="card no-c  mb-4 site-3322"
                                 data-toggle="tooltip" data-placement="bottom" title="Dedicated to Post Official Solicitation Information for Chinese Journals">
@@ -878,7 +900,6 @@
                         </div>
                     </div>
 
-
                 </div>
 
 
@@ -894,7 +915,7 @@
                         Journals<span style="color:#f1404b"> · </span>Search
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -1725,7 +1746,7 @@
                                             <div class="text-sm overflowClip_1">
                                                 <strong>Hans</strong>
                                             </div>
-                                            <p class="overflowClip_1 m-0 text-muted text-xs">汉斯中文学术期刊(Not recommended)</p>
+                                            <p class="overflowClip_1 m-0 text-muted text-xs">汉斯中文学术期刊 (Not recommended)</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1736,11 +1757,7 @@
                         </div>
                     </div>
 
-
                 </div>
-
-
-
 
 
 
@@ -1753,7 +1770,7 @@
                         Journals<span style="color:#f1404b"> · </span>English
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -4976,7 +4993,7 @@
                         Journals<span style="color:#f1404b"> · </span>Chinese
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -8601,7 +8618,7 @@
                         Dynamic<span style="color:#f1404b"> · </span>Trend
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href=''>To the Top</a>
+                    <a class='btn-move text-xs' href=''>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -8792,7 +8809,7 @@
                         Dynamic<span style="color:#f1404b"> · </span>Forum
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -9114,7 +9131,7 @@
                         Tools<span style="color:#f1404b"> · </span>Manuscript
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -9279,7 +9296,7 @@
                         Tools<span style="color:#f1404b"> · </span>Office
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -9690,7 +9707,7 @@
                         Tools<span style="color:#f1404b"> · </span>Software
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -9995,7 +10012,7 @@
                         Leisure<span style="color:#f1404b"> · </span>Talk
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -10040,7 +10057,7 @@
                         Leisure<span style="color:#f1404b"> · </span>Theater
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -10492,7 +10509,7 @@
                         Leisure<span style="color:#f1404b"> · </span>Resource
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -10654,7 +10671,7 @@
                         Leisure<span style="color:#f1404b"> · </span>Music
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -10724,7 +10741,7 @@
                         Friendly Links<span style="color:#f1404b"> · </span> Application
                     </h4>
                     <div class="flex-fill"></div>
-                    <a class='btn-move text-xs' href='#'>To the Top</a>
+                    <a class='btn-move text-xs' href='#'>Tap to Top</a>
                 </div>
                 <div class="row ">
 
@@ -10900,29 +10917,55 @@
                             <div class="s-type">
                                 <span></span>
                                 <div class="s-type-list">
-                                    <label for="m_type-googles1" data-id="group-a">推荐</label>
+                                    <label for="m_type-googlescholar1" data-id="group-a">推荐</label>
                                     <label for="m_type-bing1" data-id="group-b">搜索</label>
-                                    <label for="m_type-googlet1" data-id="group-c">翻译</label>
-                                    <label for="m_type-zhihu1" data-id="group-d">论坛</label>
+                                    <label for="m_type-eudic" data-id="group-c">翻译</label>
+                                    <label for="m_type-zhihu1" data-id="group-d">动态</label>
                                     <label for="m_type-bilibili" data-id="group-e">休闲</label>
                                 </div>
                             </div>
 
                             <div class="search-group group-a"><span class="type-text text-muted">推荐</span>
                                 <ul class="search-type">
-                                    <li><input hidden="" type="radio" name="type" id="m_type-googles1"
-                                            value="https://scholar.google.com/scholar?q=" data-placeholder="Google Scholar"><label
-                                            for="m_type-googles1"><span class="text-muted">Scholar</span></label></li>
+                                    <li><input checked="checked" hidden="" type="radio" name="type" id="m_type-connectedpapers"
+                                            value="https://www.connectedpapers.com/search?q=" 
+                                            data-placeholder="Connected Papers: Texting Title Here"><label
+                                            for="m_type-connectedpapers"><span class="text-muted">Connected</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="m_type-googlescholar1"
+                                            value="https://scholar.google.com/scholar?as_occt=title&as_oq=" 
+                                            data-placeholder="Google Scholar: Texting Title Here"><label
+                                            for="m_type-googlescholar1"><span class="text-muted">Scholar-TI</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="m_type-googlescholar2"
+                                            value="https://scholar.google.com/scholar?as_epq=" 
+                                            data-placeholder="Google Scholar: Texting Core-Words Here"><label
+                                            for="m_type-googlescholar2"><span class="text-muted">CW</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="m_type-googlescholar3"
+                                            value="https://scholar.google.com/scholar?as_sauthors=" 
+                                            data-placeholder="Google Scholar: Texting Author Here"><label
+                                            for="m_type-googlescholar3"><span class="text-muted">AU</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="m_type-cnkisearch1"
+                                            value="https://kns.cnki.net/kns8/DefaultResult/Index?korder=TI&kw=" 
+                                            data-placeholder="CNKI: Texting Title Here"><label
+                                            for="m_type-cnkisearch1"><span class="text-muted">CNKI-TI</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="m_type-cnkisearch2"
+                                            value="https://kns.cnki.net/kns8/DefaultResult/Index?korder=SU&kw=" 
+                                            data-placeholder="CNKI: Texting Core-Words Here"><label
+                                            for="m_type-cnkisearch2"><span class="text-muted">CW</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="m_type-cnkisearch3"
+                                            value="https://kns.cnki.net/kns8/DefaultResult/Index?korder=AU&kw=" 
+                                            data-placeholder="CNKI: Texting Author Here"><label
+                                            for="m_type-cnkisearch3"><span class="text-muted">AU</span></label></li>
 
                                     <li><input hidden="" type="radio" name="type" id="m_type-wechat1"
                                             value="https://weixin.sogou.com/weixin?type=2&query=" 
-                                            data-placeholder="WeChat Posts"><label
+                                            data-placeholder="WeChat Posts: Find Articles Posted by WeChat Official Account"><label
                                             for="m_type-wechat1"><span class="text-muted">WeChat</span></label></li>
-
-                                    <li><input hidden="" type="radio" name="type" id="m_type-bingimage"
-                                            value="https://www.bing.com/images/search?q=" data-placeholder="Bing Image"><label
-                                            for="m_type-bingimage"><span class="text-muted">Image</span></label></li>
-
                                 </ul>
                             </div>
 
@@ -10936,45 +10979,58 @@
                                             value="https://www.bing.com/search?q=" data-placeholder="Bing"><label
                                             for="m_type-bing1"><span class="text-muted">Bing</span></label></li>
 
+                                    <li><input hidden="" type="radio" name="type" id="m_type-bingimage"
+                                            value="https://www.bing.com/images/search?q=" data-placeholder="Bing Image"><label
+                                            for="m_type-bingimage"><span class="text-muted">Image</span></label></li>
+
                                     <li><input hidden="" type="radio" name="type" id="m_type-baidu1"
                                             value="https://www.baidu.com/s?wd=" data-placeholder="Baidu"><label
                                             for="m_type-baidu1"><span class="text-muted">Baidu</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="m_type-baiduimage"
+                                            value="https://image.baidu.com/search/index?tn=baiduimage&word=" data-placeholder="Baidu Image"><label
+                                            for="m_type-baiduimage"><span class="text-muted">Image</span></label></li>
                                 </ul>
                             </div>
 
                             <div class="search-group group-c"><span class="type-text text-muted">翻译</span>
                                 <ul class="search-type">
-                                    <li><input hidden="" type="radio" name="type" id="m_type-googlet1" 
+                                    <li><input hidden="" type="radio" name="type" id="m_type-eudic" 
+                                            value="https://dict.eudic.net/dicts/en/" 
+                                            data-placeholder="Eudic Dictionary"><label for="m_type-eudic">
+                                            <span class="text-muted">Eudic</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="m_type-googletranslator1" 
                                             value="https://translate.google.com.hk/?sourceid=cnhp&sl=auto&tl=en&text=" 
-                                            data-placeholder="CHN -> ENG | Google Translator"><label for="m_type-googlet1">
+                                            data-placeholder="CHN -> ENG | Google Translator"><label for="m_type-googletranslator1">
                                             <span class="text-muted">CE-Google</span></label></li>
 
                                     <li><input hidden="" type="radio" name="type" id="m_type-deepl1" 
                                             value="https://www.deepl.com/translator#zh/en/" 
                                             data-placeholder="CHN -> ENG | DeepL Translator"><label for="m_type-deepl1">
-                                            <span class="text-muted">CE-DeepL</span></label></li>
+                                            <span class="text-muted">DeepL</span></label></li>
 
-                                    <li><input hidden="" type="radio" name="type" id="m_type-googlet2" 
+                                    <li><input hidden="" type="radio" name="type" id="m_type-googletranslator2" 
                                             value="https://translate.google.com.hk/?sourceid=cnhp&sl=auto&tl=zh-CN&text=" 
-                                            data-placeholder="ENG -> CHN | Google Translator"><label for="m_type-googlet2">
+                                            data-placeholder="ENG -> CHN | Google Translator"><label for="m_type-googletranslator2">
                                             <span class="text-muted">EC-Google</span></label></li>
 
                                     <li><input hidden="" type="radio" name="type" id="m_type-deepl2" 
                                             value="https://www.deepl.com/translator#en/zh/" 
                                             data-placeholder="ENG -> CHN | DeepL Translator"><label for="m_type-deepl2">
-                                            <span class="text-muted">EC-DeepL</span></label></li>
+                                            <span class="text-muted">DeepL</span></label></li>
                                 </ul>
                             </div>
 
-                            <div class="search-group group-d"><span class="type-text text-muted">论坛</span>
+                            <div class="search-group group-d"><span class="type-text text-muted">动态</span>
                                 <ul class="search-type">
-                                    <li><input hidden="" type="radio" name="type" id="m_type-zhihu1"
-                                            value="https://www.zhihu.com/search?type=content&q=" data-placeholder="Zhihu"><label 
-                                            for="m_type-zhihu1"><span class="text-muted">Zhihu</span></label></li>
-
                                     <li><input hidden="" type="radio" name="type" id="m_type-douban"
                                             value="https://www.douban.com/search?q=" data-placeholder="Douban"><label
                                             for="m_type-douban"><span class="text-muted">Douban</span></label></li>
+
+                                    <li><input hidden="" type="radio" name="type" id="m_type-zhihu1"
+                                            value="https://www.zhihu.com/search?type=content&q=" data-placeholder="Zhihu"><label 
+                                            for="m_type-zhihu1"><span class="text-muted">Zhihu</span></label></li>
 
                                     <li><input hidden="" type="radio" name="type" id="m_type-weibo"
                                             value="https://s.weibo.com/weibo/" data-placeholder="Weibo"><label
