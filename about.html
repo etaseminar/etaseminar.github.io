@@ -91,22 +91,22 @@
 
 
         body{
-            cursor:url(./cur/xiaoshou1.cur),default;
+            cursor:url(./cur/Default.cur),default;
         }
         a:hover {
-            cursor:url(./cur/xiaoshou2.cur),pointer;
+            cursor:url(./cur/Link.cur),pointer;
         }
         li:hover {
-            cursor:url(./cur/xiaoshou2.cur),default;
+            cursor:url(./cur/Default.cur),default;
         }
         label:hover {
-            cursor:url(./cur/xiaoshou2.cur),pointer;
+            cursor:url(./cur/Link.cur),pointer;
         }
         span:hover {
-            cursor:url(./cur/xiaoshou2.cur),default;
+            cursor:url(./cur/Link.cur),default;
         }
         input:hover {
-            cursor:url(./cur/xiaoshou3.cur),text;
+            cursor:url(./cur/Vertical.cur),text;
         }
 
 
@@ -591,8 +591,9 @@
 
 
                             <ul class="nav navbar-menu text-xs order-1 order-md-2">
-                                <!-- 一言 -->
-                                <li class="nav-item mr-3 mr-lg-0 d-none d-lg-block">
+                                
+                                <!-- 一句话 -->
+                                <li class="nav-item mr-3 mr-lg-0 d-none d-lg-block ">
                                     <script>
                                         fetch('https://v1.hitokoto.cn')
                                             .then(response => response.json())
@@ -603,9 +604,13 @@
                                             })
                                             .catch(console.error)
                                     </script>
-                                    <div id="hitokoto"><a href="#" target="_blank" id="hitokoto_text">ETASeminar ★ Assist academic research!</a></div>
+                                    <strong>
+                                    <span style="font-size:1.6em">
+                                        <div id="hitokoto"><a href="#" target="_blank" id="hitokoto_text" style="pointer-events:none;">ETASeminar ★ Assist academic research!</a> —— ETASeminar&nbsp;&nbsp;</div>
+                                    </strong>
+                                    </span> 
                                 </li>
-                                <!-- 一言 end -->
+                                <!-- 一句话 end style="pointer-events:none;" 实现不可点击！-->
 
                                 <!-- 右上角搜索 --
                                 <li class="nav-search ml-3 ml-md-4">

@@ -91,28 +91,27 @@
 
 
         body{
-            cursor:url(./cur/xiaoshou1.cur),default;
+            cursor:url(./cur/Default.cur),default;
         }
         a:hover {
-            cursor:url(./cur/xiaoshou2.cur),pointer;
+            cursor:url(./cur/Link.cur),pointer;
         }
         li:hover {
-            cursor:url(./cur/xiaoshou2.cur),default;
+            cursor:url(./cur/Default.cur),default;
         }
         label:hover {
-            cursor:url(./cur/xiaoshou2.cur),pointer;
+            cursor:url(./cur/Link.cur),pointer;
         }
         span:hover {
-            cursor:url(./cur/xiaoshou2.cur),default;
+            cursor:url(./cur/Link.cur),default;
         }
         input:hover {
-            cursor:url(./cur/xiaoshou3.cur),text;
+            cursor:url(./cur/Vertical.cur),text;
         }
 
-
-
-        
     </style>
+
+
     <!-- 百度统计 -->
     <script>
         var _hmt = _hmt || [];
@@ -123,9 +122,11 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
-    <!-- end 百度统计 -->
-</head>
+    <!-- 百度统计 end -->
 
+
+
+</head>
 <body class="io-grey-mode">
     <div id="loading">
         <style>
@@ -585,9 +586,11 @@
 
 
 
+
                             <ul class="nav navbar-menu text-xs order-1 order-md-2">
-                                <!-- 一言 -->
-                                <li class="nav-item mr-3 mr-lg-0 d-none d-lg-block">
+
+                                <!-- 一句话 -->
+                                <li class="nav-item mr-3 mr-lg-0 d-none d-lg-block ">
                                     <script>
                                         fetch('https://v1.hitokoto.cn')
                                             .then(response => response.json())
@@ -598,9 +601,23 @@
                                             })
                                             .catch(console.error)
                                     </script>
-                                    <div id="hitokoto"><a href="#" target="_blank" id="hitokoto_text">ETASeminar ★ Assist academic research!</a></div>
+                                    <strong>
+                                    <span style="font-size:1.6em">
+                                        <div id="hitokoto"><a href="#" target="_blank" id="hitokoto_text" style="pointer-events:none;">ETASeminar ★ Assist academic research!</a> —— ETASeminar&nbsp;&nbsp;</div>
+                                    </strong>
+                                    </span> 
                                 </li>
-                                <!-- 一言 end -->
+                                <!-- 一句话 end style="pointer-events:none;" 实现不可点击！-->
+
+                                <!-- 夜间模式 --
+                                <li class="nav-search ml-3 ml-md-4">
+                                    <a href="javascript:" onclick="window.location.href='javascript:switchNightMode()'"
+                                        class="btn rounded-circle switch-dark-mode m-1" id="yejian" data-toggle="tooltip"
+                                        data-placement="left" title="">
+                                        <i class="mode-ico iconfont icon-yejian"></i>
+                                    </a>
+                                </li> 
+                                !-- 夜间模式 end -->
 
                                 <!-- 右上角搜索 --
                                 <li class="nav-search ml-3 ml-md-4">
@@ -623,17 +640,8 @@
                                 </li>                 
                                 <!-- 精简搜索 end -->
 
-                                <!-- 夜间模式 --
-                                <li class="nav-search ml-3 ml-md-4">
-                                    <a href="javascript:" onclick="window.location.href='javascript:switchNightMode()'"
-                                        class="btn rounded-circle switch-dark-mode m-1" id="yejian" data-toggle="tooltip"
-                                        data-placement="left" title="">
-                                        <i class="mode-ico iconfont icon-yejian"></i>
-                                    </a>
-                                </li> 
-                                !-- 夜间模式 end -->
-
                             </ul>
+
                         </div>
                     </div>
                 </div>
@@ -1282,8 +1290,8 @@
                                     <div class="url-content d-flex align-items-center">
                                         <div
                                             class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
-                                            <img class="lazy" src="ico/wiley.png" data-src="ico/wiley.png"
-                                                onerror="javascript:this.src='ico/wiley.png'" alt="WILEY">
+                                            <img class="lazy" src="ico/journals/wiley.png" data-src="ico/journals/wiley.png"
+                                                onerror="javascript:this.src='ico/journals/wiley.png'" alt="WILEY">
                                         </div>
                                         <div class="url-info flex-fill">
                                             <div class="text-sm overflowClip_1">
@@ -1370,9 +1378,9 @@
                                     <div class="url-content d-flex align-items-center">
                                         <div
                                             class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
-                                            <img class="lazy" src="ico/wisc.png" 
-                                                data-src="ico/wisc.png"
-                                                onerror="javascript:this.src='ico/wisc.png'" alt="University of Wisconsin">
+                                            <img class="lazy" src="ico/journals/wisc.png" 
+                                                data-src="ico/journals/wisc.png"
+                                                onerror="javascript:this.src='ico/journals/wisc.png'" alt="University of Wisconsin">
                                         </div>
                                         <div class="url-info flex-fill">
                                             <div class="text-sm overflowClip_1">
@@ -10539,9 +10547,9 @@
                                     <div class="url-content d-flex align-items-center">
                                         <div
                                             class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
-                                            <img class="lazy" src="ico/youtube2.png"
-                                                data-src="ico/youtube2.png"
-                                                onerror="javascript:this.src='ico/youtube2.png'" alt="YouTube">
+                                            <img class="lazy" src="ico/youtube.png"
+                                                data-src="ico/youtube.png"
+                                                onerror="javascript:this.src='ico/youtube.png'" alt="YouTube">
                                         </div>
                                         <div class="url-info flex-fill">
                                             <div class="text-sm overflowClip_1">
@@ -11301,7 +11309,7 @@
                     <!-- 夜间模式 -->
                     <a href="javascript:" onclick="window.location.href='javascript:switchNightMode()'"
                         class="btn rounded-circle switch-dark-mode m-1" id="yejian" data-toggle="tooltip"
-                        data-placement="left" title="Night Mode">
+                        data-placement="left" title="夜间模式">
                         <i class="mode-ico iconfont icon-yejian"></i>
                     </a>
                     <!-- 夜间模式 end -->
@@ -11525,7 +11533,7 @@
     <script type='text/javascript' id='popper-js-extra'>
         /* <![CDATA[ */
         var theme = { "ajaxurl": "https:\/\/nav.iowen.cn\/wp-admin\/admin-ajax.php", "addico": "https:\/\/nav.iowen.cn\/wp-content\/themes\/onenav\/images\/add.png", "order": "asc", "formpostion": "top", "defaultclass": "io-grey-mode", "isCustomize": "1", "icourl": "https:\/\/api.iowen.cn\/favicon\/", "icopng": ".png", "urlformat": "1", "customizemax": "10", "newWindow": "0", "lazyload": "1", "minNav": "1", "loading": "1", "hotWords": "baidu", "classColumns": " col-sm-6 col-md-4 col-xl-5a col-xxl-6a ", "apikey": "TWpBeU1UVTNOekk1TWpVMEIvZ1M2bFVIQllUMmxsV1dZelkxQTVPVzB3UW04eldGQmxhM3BNWW14bVNtWk4=" };
-/* ]]> */
+        /* ]]> */
     </script>
     <script type='text/javascript' src='wp-content/themes/onenav/js/popper.min-3.03029.1.js' id='popper-js'></script>
     <script type='text/javascript' src='wp-content/themes/onenav/js/bootstrap.min-3.03029.1.js'
@@ -11592,15 +11600,16 @@
             });
         });
     </script>
+
+
+
+
     <!-- 自定义代码 -->
-
-
-
     <script>
         //夜间模式
         (function () {
             if (document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") === '') {
-                if (new Date().getHours() > 22 || new Date().getHours() < 6) {
+                if (new Date().getHours() > 21 || new Date().getHours() < 8) {
                     document.body.classList.remove('io-black-mode');
                     document.body.classList.add('io-grey-mode');
                     document.cookie = "night=1;path=/";
@@ -11640,9 +11649,7 @@
                 $(".mode-ico").addClass("icon-yejian");
             }
         }
-
     </script>
-
 
 
     <!-- 看板 -->
@@ -11652,9 +11659,10 @@
 <script type="text/javascript" src="cur/aixintexiao.js"></script>
 
 
-
-
     <!-- end 自定义代码 -->
+
+
+
 </body>
 
 </html>
