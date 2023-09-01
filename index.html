@@ -110,6 +110,33 @@
     </style>
 
 
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
+  <script>  
+    // 调用文心一言API  
+    function search() {  
+      var query = document.getElementById("query").value; // 获取输入框的值  
+      axios.get('https://api.example.com/search', {  
+        params: {  
+          query: query,  
+          app_id: 'MCEDgjat2p4amtjNq0zoYt3vUAwoSGsH',  
+          app_key: 'qk0Eeiin94jAnQzZKfA0Zvj2NTpm8QQw'  
+        }  
+      }).then(function (response) {  
+        // 处理API返回的结果  
+        var results = response.data.results;  
+        var html = '';  
+        for (var i = 0; i < results.length; i++) {  
+          var result = results[i];  
+          html += '<div><h3>' + result.title + '</h3><p>' + result.abstract + '</p></div>';  
+        }  
+        document.getElementById("results").innerHTML = html;  
+      });  
+    }  
+  </script>  
+
+
+
     <!-- 百度统计 -->
     <script>
         var _hmt = _hmt || [];
@@ -830,26 +857,26 @@
                 <div class="bulletin-big mx-3 mx-md-0">
                     <div id="bulletin_box" class="card my-2">
                         <div class="card-body py-1 px-2 px-md-3 d-flex flex-fill text-xs text-muted">
-                            <div><i class="iconfont icon-laba font-size:26px" style="line-height:25px"></i></div>
+                            <div><i class="iconfont icon-laba font-size:28px" style="line-height:25px"></i></div>
                             <div class="bulletin mx-1 mx-md-2 carousel-vertical">
                                 <div class="carousel slide" data-ride="carousel" data-interval="3000">
                                     <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active"><a class="overflowClip_1" href="https://etaseminar.github.io/" 
-                                             target="_blank">最好用的学术导航网页，助力学术科研!</a></div>
+                                             target="_blank">最好用学术导航网页，助力学术科研!</a></div>
 
                                         <div class="carousel-item "><a class="overflowClip_1" href="https://etaseminar.github.io/" 
                                              target="_blank">The best academic navigation webpage to assist your academic research!</a></div>
 
-                                        <div class="carousel-item "><a class="overflowClip_1" href="https://etaseminar.github.io/" 
+                                        <div class="carousel-item "><a class="overflowClip_1" href="https://weiweizheng.github.io/" 
                                              target="_blank">由 Weiwei ZHENG 倾情打造的最好用学术导航网页!</a></div>
 
-                                        <div class="carousel-item "><a class="overflowClip_1" href="https://etaseminar.github.io/" 
+                                        <div class="carousel-item "><a class="overflowClip_1" href="https://weiweizheng.github.io/" 
                                              target="_blank">The best academic navigation webpage designed by Weiwei ZHENG!</a></div>
 
-                                        <div class="carousel-item "><a class="overflowClip_1" href="https://etaseminar.github.io/" 
+                                        <div class="carousel-item "><a class="overflowClip_1" href="https://etaseminar.eu.org/" 
                                              target="_blank">欢迎访问ETASeminar官网：etaseminar.eu.org!</a></div>
 
-                                        <div class="carousel-item "><a class="overflowClip_1" href="https://etaseminar.github.io/" 
+                                        <div class="carousel-item "><a class="overflowClip_1" href="https://etaseminar.eu.org/" 
                                              target="_blank">Welcome to ETASeminar official website: etaseminar.eu.org!</a></div>
                                     </div>
                                 </div>
@@ -879,15 +906,15 @@
 
                     <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
                         <div class="url-body default">
-                            <a href="https://www.gjk.cn/daxiaoxie" target="_blank" data-id="725"
-                                data-url="https://www.gjk.cn/daxiaoxie" class="card no-c  mb-4 site-725" data-toggle="tooltip"
+                            <a href="https://www.lzltool.cn/daxiaoxie" target="_blank" data-id="725"
+                                data-url="https://www.lzltool.cn/daxiaoxie" class="card no-c  mb-4 site-725" data-toggle="tooltip"
                                 data-placement="bottom" title="Text Case Convert Online Tool">
                                 <div class="card-body">
                                     <div class="url-content d-flex align-items-center">
                                         <div
                                             class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
-                                            <img class="lazy" src="ico/daxiaoxie.png" data-src="ico/daxiaoxie.png"
-                                                onerror="javascript:this.src='ico/daxiaoxie.png'" alt="DaXiaoXie">
+                                            <img class="lazy" src="ico/yingyu.png" data-src="ico/yingyu.png"
+                                                onerror="javascript:this.src='ico/yingyu.png'" alt="DaXiaoXie">
                                         </div>
                                         <div class="url-info flex-fill">
                                             <div class="text-sm overflowClip_1">
@@ -901,10 +928,11 @@
                                 </div>
                             </a>
                             <a href="https://www.gjk.cn/daxiaoxie" class="togo text-center text-muted is-views" data-id="725"
-                                data-toggle="tooltip" data-placement="right" title="Go to" rel="nofollow"><i
+                                data-toggle="tooltip" data-placement="right" title="Go to Plan B" rel="nofollow"><i
                                     class="iconfont icon-goto"></i></a>
                         </div>
                     </div>
+
 
                     <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
                         <div class="url-body default">
@@ -9531,15 +9559,15 @@
 
                     <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a   ">
                         <div class="url-body default">
-                            <a href="https://www.gjk.cn/daxiaoxie" target="_blank" data-id="725"
-                                data-url="https://www.gjk.cn/daxiaoxie" class="card no-c  mb-4 site-725" data-toggle="tooltip"
+                            <a href="https://www.lzltool.cn/daxiaoxie" target="_blank" data-id="725"
+                                data-url="https://www.lzltool.cn/daxiaoxie" class="card no-c  mb-4 site-725" data-toggle="tooltip"
                                 data-placement="bottom" title="Text Case Convert Online Tool">
                                 <div class="card-body">
                                     <div class="url-content d-flex align-items-center">
                                         <div
                                             class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
-                                            <img class="lazy" src="ico/daxiaoxie.png" data-src="ico/daxiaoxie.png"
-                                                onerror="javascript:this.src='ico/daxiaoxie.png'" alt="DaXiaoXie">
+                                            <img class="lazy" src="ico/yingyu.png" data-src="ico/yingyu.png"
+                                                onerror="javascript:this.src='ico/yingyu.png'" alt="DaXiaoXie">
                                         </div>
                                         <div class="url-info flex-fill">
                                             <div class="text-sm overflowClip_1">
@@ -9553,7 +9581,7 @@
                                 </div>
                             </a>
                             <a href="https://www.gjk.cn/daxiaoxie" class="togo text-center text-muted is-views" data-id="725"
-                                data-toggle="tooltip" data-placement="right" title="Go to" rel="nofollow"><i
+                                data-toggle="tooltip" data-placement="right" title="Go to Plan B" rel="nofollow"><i
                                     class="iconfont icon-goto"></i></a>
                         </div>
                     </div>
@@ -10701,7 +10729,7 @@
                                                 <strong>VideoTool</strong>
                                             </div>
                                             <p class="overflowClip_1 m-0 text-muted text-xs">
-                                                刘明野工具箱</p>
+                                                Video Toolbx</p>
                                         </div>
                                     </div>
                                 </div>
