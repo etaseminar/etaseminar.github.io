@@ -110,33 +110,6 @@
     </style>
 
 
-
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
-  <script>  
-    // 调用文心一言API  
-    function search() {  
-      var query = document.getElementById("query").value; // 获取输入框的值  
-      axios.get('https://api.example.com/search', {  
-        params: {  
-          query: query,  
-          app_id: 'MCEDgjat2p4amtjNq0zoYt3vUAwoSGsH',  
-          app_key: 'qk0Eeiin94jAnQzZKfA0Zvj2NTpm8QQw'  
-        }  
-      }).then(function (response) {  
-        // 处理API返回的结果  
-        var results = response.data.results;  
-        var html = '';  
-        for (var i = 0; i < results.length; i++) {  
-          var result = results[i];  
-          html += '<div><h3>' + result.title + '</h3><p>' + result.abstract + '</p></div>';  
-        }  
-        document.getElementById("results").innerHTML = html;  
-      });  
-    }  
-  </script>  
-
-
-
     <!-- 百度统计 -->
 <script>
     var _hmt = _hmt || [];
